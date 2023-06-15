@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\cartController;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -50,6 +50,15 @@ Route::get('/produks', [HomeController::class, 'produk']);
 Route::get('/kontak', [HomeController::class, 'kontak']);
 Route::post('/kirim', [HomeController::class, 'kirim']);
 Route::post('/tambah/keranjang/{id}', [HomeController::class, 'tambah_kerangjang']);
+
+// Route::get('/cart', [cartController::class, 'index']);
+// Route::post('/cart/{id}', [cartController::class, 'store']);
+// Route::post('/cart/destroy/{id}', [cartController::class, 'destroy']);
+
+Route::resource('/cart', cartController::class);
+// Route::get('/checkout', cartController::class, 'front_checkout');
+
+
 
 
 Route::get('/keranjang', [HomeController::class, 'keranjang']);

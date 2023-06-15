@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Orderdetail extends Model
 {
     protected $table = 'orders_details';
-    protected $fillable = [ 'id_produk', 'jumlah', 'ukuran', 'total'];
+    protected $fillable = [ 'id_order', 'id_produk', 'jumlah', 'ukuran', 'total'];
 }

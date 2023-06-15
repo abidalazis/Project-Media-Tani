@@ -74,12 +74,13 @@
                                 </button>
                             </div>
                         </div>
-                        <form action="/tambah/keranjang/tambah_keranjang" method="POST">
+                        <form  action="{{ route('cart.store') }}" method="POST">
                         @csrf
-                        <input type="hidden" value="{{ $produks->id }}" name="id_produk">
-                        <input type="submit" class="btn btn-primary px-3" value="Add To Cart">
+                        <input type="hidden" value="{{ $produks->nama_barang }}" name="nama_barang">
+                        <input type="hidden" value="{{ $produks->harga }}" name="harga">
+                        <input type="submit" class="btn btn-primary px-3 " target="_blank" value="Add To Cart">
                         </form>
-                        <button class="btn btn-primary px-3"   ><i class="fa fa-shopping-cart mr-1" href="/tambah/keranjang/{{ $produks->id }}"></i> Add To
+                        <button class="btn btn-primary px-3"   target="_blank"><i class="fa fa-shopping-cart mr-1" href="/tambah/keranjang/{{ $produks->id }}"></i> Add To
                             Cart</button>
                     </div>
                     <div class="d-flex pt-2">
