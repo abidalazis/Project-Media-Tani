@@ -44,6 +44,7 @@ Route::resource('/dashboard/produk', ProdukController::class)->middleware('auth'
 // home
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/tentang', [HomeController::class, 'tentang']);
+Route::get('/pesanan', [HomeController::class, 'cara_pesan']);
 Route::get('/produk/{kategori}', [HomeController::class, 'produks']);
 Route::get('/detail/{id}', [HomeController::class, 'detail']);
 Route::get('/produks', [HomeController::class, 'produk']);

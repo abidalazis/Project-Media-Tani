@@ -26,35 +26,34 @@
             <div class="col-lg-7 mb-5">
                 <div class="contact-form bg-light p-30">
                     <div id="success"></div>
-                    
-                    <form action="kirim" method="POST" accept-charset="utf-8">
-                        @csrf
-                        <div class="form-group">
-                        <div class="input Nomer"><label for="Nomer">Your Number</label><input placeholder="62812xxxx" name="nomer" type="number" class="form-control" id="nomer" required /></div>
-                        </div>
-                        <div class="form-group">
-                        <div class="input nama"><label for="nama">Your Name</label><input placeholder="nama" name="nama" type="text" class="form-control" id="nama" required /></div>
-                        </div>
-                        <div class="form-group">
-                        <div class="input pesan"><label for="pesan">Message</label><textarea class="form-control" rows="4" id="pesan" name="pesan" placeholder="pesan"></textarea></div>
-                        </div>
-                        <div class="form-group">
-                        <div class="submit"><button type="submit" id="btn-wa" class="btn btn-primary btn-user btn-block">Send</button>
-                        </div>
+                        <form action="kirim" method="POST" accept-charset="utf-8">
+                            @csrf
+                            <div class="form-group">
+                            <div class="input Nomer"><label for="Nomer">Your Number</label><input placeholder="62812xxxx" name="nomer" type="number" class="form-control" id="nomer" required /></div>
+                            </div>
+                            <div class="form-group">
+                            <div class="input nama"><label for="nama">Your Name</label><input placeholder="nama" name="nama" type="text" class="form-control" id="nama" required /></div>
+                            </div>
+                            <div class="form-group">
+                            <div class="input pesan"><label for="pesan">Message</label><textarea class="form-control" rows="4" id="pesan" name="pesan" placeholder="pesan"></textarea></div>
+                            </div>
+                            <div class="form-group">
+                            <div class="submit"><button type="submit" id="btn-wa" class="btn btn-primary btn-user btn-block">Send</button>
+                            </div>
                         </form>
-                        
+                    </div>
                 </div>
             </div>
             <div class="col-lg-5 mb-5">
                 <div class="bg-light p-30 mb-30">
                     <iframe style="width: 100%; height: 250px;"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.4932977407857!2d111.50957807497062!3d-7.947865992076491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e790b04bc7ebf63%3A0x450d456c9d6bf19d!2sMedia%20Tani%20Toko%20Sarana%20Pertanian!5e0!3m2!1sen!2sbd!4v1686815310560!5m2!1sen!2sbd"
                     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
                 <div class="bg-light p-30 mb-3">
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Jalan Mlarak Sambit, RT/RW 02/01, Ngrayut, Coper, Kec. Jetis, Kabupaten Ponorogo, Jawa Timur 63473</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>mediatani@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>0813-3063-5775</p>
                 </div>
             </div>
         </div>

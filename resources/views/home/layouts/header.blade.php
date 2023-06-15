@@ -78,7 +78,6 @@
               <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                   <div class="navbar-nav mr-auto py-0">
                       <a href="/" class="nav-item nav-link active">Home</a>
-                      <a href="/produks" class="nav-item nav-link">Produk</a>
                       <a href="/tentang" class="nav-item nav-link">Tentang</a>
                       <a href="/pesanan" class="nav-item nav-link">Cara Pemesanan</a>
                       <div class="nav-item dropdown">
@@ -95,7 +94,7 @@
                           <i class="fas fa-heart text-primary"></i>
                           <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
                       </a>
-                      <a href="/keranjang" class="btn px-0 ml-3">
+                      <a href="/cart" class="btn px-0 ml-3">
                           <i class="fas fa-shopping-cart text-primary"></i>
                           <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
                       </a>

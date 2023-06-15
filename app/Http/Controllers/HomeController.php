@@ -82,5 +82,10 @@ class HomeController extends Controller
         return view('home.tentang.index');
     }
 
+    public function cara_pesan()
+    {
+        return view('home.cara_pemesanan.index');
+    }
+
     
 }
