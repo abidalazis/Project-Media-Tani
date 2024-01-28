@@ -24,7 +24,8 @@ class SubkategoriController extends Controller
     {
         $kategori = Kategori::all();
         $subkategori = Subkategori::with('kategori')->latest()->get();
-        return view('dashboard.subkategori.index' , compact('subkategori','kategori'));
+        return view('dashboard.subkategori.index' , 
+        compact('subkategori','kategori'));
     }
 
     /**
@@ -90,7 +91,9 @@ class SubkategoriController extends Controller
     public function edit(Subkategori $subkategori)
     {
         return view('dashboard.subkategori.edit',[
-            'subkategori' => $subkategori], compact('subkategori'));
+            'subkategori' => $subkategori,
+            'categories'=> Kategori::all()
+        ], compact('subkategori'));
     }
 
     /**

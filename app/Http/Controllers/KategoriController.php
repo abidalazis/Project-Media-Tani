@@ -99,7 +99,7 @@ class KategoriController extends Controller
         $request->validate([
             'nama_kategori' => 'required',
             'deskripsi' => 'required',
-            'gambar' => 'required|image|mimes:jpg,png,jpeg,webp',
+            'gambar' => 'image|mimes:jpg,png,jpeg,webp',
 
         ]);
         $input = $request->all();

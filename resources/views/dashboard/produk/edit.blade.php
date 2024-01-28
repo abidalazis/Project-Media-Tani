@@ -14,35 +14,27 @@
                         @method('PUT')
                         @csrf
                         <div class="form-group">
+                            <label class="font-weight-bold">KATEGORI</label>
+                            <select class="form-select" name="id_kategori">
+                                @foreach ($categories as $item)
+                                <option value="{{ $item->id }}" @if($item->id==$produk->id_kategori) selected @endif>{{ $item->nama_kategori }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">SUBKATEGORI</label>
+                            <select class="form-select" name="id_subkategori">
+                            @foreach ($subcategories as $item)
+                            <option value="{{ $item->id }}" @if($item->id==$produk->id_subkategori) selected @endif>{{ $item->nama_subkategori }}</option>
+                            @endforeach
+                        </select>
+                        </div>
+                        <div class="form-group">
                             <label class="font-weight-bold">GAMBAR</label>
                             <input type="file" class="form-control @error('gambar') is-invalid @enderror" name="gambar" value="{{ old('gambar', $produk->gambar) }}">
                         
                             <!-- error message untuk title -->
                             @error('gambar')
-                                <div class="alert alert-danger mt-2">
-                                    {{ $message }}
-                                </div>
-                            @enderror
-                        </div>
-
-                        <div class="form-group">
-                            <label class="font-weight-bold">JUDUL KATEGORI</label>
-                            <input type="text" class="form-control @error('nama_barang') is-invalid @enderror" name="nama_barang" value="{{ old('nama_barang', $produk->nama_barang) }}" placeholder="Masukkan Judul Post"></input>
-                        
-                            <!-- error message untuk nama_barang -->
-                            @error('nama_barang')
-                                <div class="alert alert-danger mt-2">
-                                    {{ $message }}
-                                </div>
-                            @enderror
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="font-weight-bold">JUDUL SUBKATEGORI</label>
-                            <input type="text" class="form-control @error('nama_barang') is-invalid @enderror" name="nama_barang" value="{{ old('nama_barang', $produk->nama_barang) }}" placeholder="Masukkan Judul Post"></input>
-                        
-                            <!-- error message untuk nama_barang -->
-                            @error('nama_barang')
                                 <div class="alert alert-danger mt-2">
                                     {{ $message }}
                                 </div>

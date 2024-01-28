@@ -26,6 +26,15 @@
                         </div>
 
                         <div class="form-group">
+                            <label class="font-weight-bold">KATEGORI</label>
+                            <select class="form-select" name="id_kategori">
+                                @foreach ($categories as $item)
+                                <option value="{{ $item->id }}" @if($item->id==$subkategori->id_kategori) selected @endif>{{ $item->nama_kategori }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                            
+                        <div class="form-group">
                             <label class="font-weight-bold">JUDUL subKATEGORI</label>
                             <input type="text" class="form-control @error('nama_subkategori') is-invalid @enderror" name="nama_subkategori" value="{{ old('nama_subkategori', $subkategori->nama_subkategori) }}" placeholder="Masukkan Judul Post"></input>
                         

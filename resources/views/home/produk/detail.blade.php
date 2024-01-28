@@ -62,17 +62,9 @@
                     </div>
                     <div class="d-flex align-items-center mb-4 pt-2">
                         <div class="input-group quantity mr-3" style="width: 130px;">
-                            <div class="input-group-btn">
-                                <button class="btn btn-primary btn-minus">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </div>
+                          
                             <input type="text" class="form-control bg-secondary border-0 text-center" value="1">
-                            <div class="input-group-btn">
-                                <button class="btn btn-primary btn-plus">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
+                           
                         </div>
                         <form  action="{{ route('cart.store') }}" method="POST">
                         @csrf
@@ -80,8 +72,7 @@
                         <input type="hidden" value="{{ $produks->harga }}" name="harga">
                         <input type="submit" class="btn btn-primary px-3 " target="_blank" value="Add To Cart">
                         </form>
-                        <button class="btn btn-primary px-3"   target="_blank"><i class="fa fa-shopping-cart mr-1" href="/tambah/keranjang/{{ $produks->id }}"></i> Add To
-                            Cart</button>
+                        
                     </div>
                     <div class="d-flex pt-2">
                         <strong class="text-dark mr-2">Share on:</strong>

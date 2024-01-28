@@ -53,12 +53,24 @@ class HomeController extends Controller
     {
         return view('home.kontak.index');
     }
+    
+    public function kirim_barang()
+    {
+        $nama=$_POST['nama'];
+        $nomer=$_POST['nomer'];
+        $alamat=$_POST['alamat'];
+        $barang=$_POST['barang'];
+        
+        return redirect('https://api.whatsapp.com/send?phone=6281770255117/&text=Nama%20%3A%20'.$nama.'%0ANomer%20%3A%20'.$nomer.'%0AAlamat%20%3A%20'.$alamat.'%0ABarang%20%3A%20'.$barang.'%0A');
+    }
+
     public function kirim()
     {
         $nama=$_POST['nama'];
         $nomer=$_POST['nomer'];
         $pesan=$_POST['pesan'];
-        return redirect('https://api.whatsapp.com/send?phone=6282229119060/&text=Nama%20%3A%20'.$nama.'%0ANomer%20%3A%20'.$nomer.'%0APesan%20%3A%20'.$pesan.'%0A');
+        
+        return redirect('https://api.whatsapp.com/send?phone=6281770255117/&text=Nama%20%3A%20'.$nama.'%0ANomer%20%3A%20'.$nomer.'%0APesan%20%3A%20'.$pesan.'%0A');
     }
 
     public function keranjang()

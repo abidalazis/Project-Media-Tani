@@ -50,6 +50,7 @@ Route::get('/detail/{id}', [HomeController::class, 'detail']);
 Route::get('/produks', [HomeController::class, 'produk']);
 Route::get('/kontak', [HomeController::class, 'kontak']);
 Route::post('/kirim', [HomeController::class, 'kirim']);
+Route::post('/kirim_barang', [HomeController::class, 'kirim_barang']);
 Route::post('/tambah/keranjang/{id}', [HomeController::class, 'tambah_kerangjang']);
 
 // Route::get('/cart', [cartController::class, 'index']);

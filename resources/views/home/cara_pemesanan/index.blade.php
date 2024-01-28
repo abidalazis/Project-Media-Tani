@@ -54,11 +54,11 @@
 
 
 
-<p>6. Silahkan lakukan pembayaran sesuai dengan sub total belanja anda ke rekening yang tertera pada website kami <a href="https://www.happyshopingbatam.com/">www.happyshopingbatam.com</a></p>
+<p>7. Silahkan lakukan pembayaran sesuai dengan sub total belanja anda ke rekening yang tertera pada website kami <a href="/">www.mediatani.com</a></p>
 
 
 
-<p>7. setelah melakukan pembayaran segera konfirmasi bukti strup pembayaran anda beserta nomer order untuk kami proseskan pesanan anda pada hari itu juga</p>
+<p>8. setelah melakukan pembayaran segera konfirmasi bukti strup pembayaran anda beserta nomer order untuk kami proseskan pesanan anda pada hari itu juga</p>
 
 
 

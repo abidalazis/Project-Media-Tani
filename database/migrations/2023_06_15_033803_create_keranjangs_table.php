@@ -19,7 +19,7 @@ class CreateKeranjangsTable extends Migration
             $table->string('nama_barang');
             $table->integer('jumlah');
             $table->integer('harga');
-            $table->integer('total');
+            $table->string('total');
             $table->timestamps();
         });
     }

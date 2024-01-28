@@ -53,7 +53,7 @@ class ProdukController extends Controller
             'diskon' => 'required',
             'bahan' => 'required',
             'ukuran' => 'required',
-            'gambar' => 'required|image|mimes:jpg,png,jpeg,webp',
+            'gambar' => 'required|image|max:5048|mimes:jpg,png,jpeg,webp',
 
         ]);
      
@@ -91,7 +91,10 @@ class ProdukController extends Controller
     public function edit(Produk $produk)
     {
         return view('dashboard.produk.edit',[
-            'produk' => $produk], compact('produk'));
+            'produk' => $produk,
+            'categories'=> Kategori::all(),
+            'subcategories'=> Subkategori::all()
+        ], compact('produk'));
     }
 
     /**
@@ -105,15 +108,12 @@ class ProdukController extends Controller
     {
         $request->validate([
             
-            'id_kategori' => 'required',
-            'id_subkategori' => 'required',
             'nama_barang' => 'required',
             'deskripsi' => 'required',
             'harga' => 'required',
             'diskon' => 'required',
             'bahan' => 'required',
             'ukuran' => 'required',
-            'gambar' => 'required|image|mimes:jpg,png,jpeg,webp',
 
         ]);
      
@@ -130,10 +130,7 @@ class ProdukController extends Controller
         }
         $produk->update($input);
         
-        return redirect('dashboard/produk/',[
-            'categories'=> Kategori::all(),
-            'subcategories'=> Subkategori::all()
-        ])->with(['success' => 'Data produk Berhasil Disimpan!']);
+        return redirect('dashboard/produk/',)->with(['success' => 'Data produk Berhasil Disimpan!']);
     
     }
 

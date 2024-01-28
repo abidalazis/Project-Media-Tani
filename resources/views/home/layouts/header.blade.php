@@ -3,22 +3,13 @@
         
   <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
       <div class="col-lg-4">
-          <a href="" class="text-decoration-none">
+          <a href="/" class="text-decoration-none">
               <span class="h1 text-uppercase text-primary bg-dark px-2">Media</span>
               <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Tani</span>
           </a>
       </div>
       <div class="col-lg-4 col-6 text-left">
-          <form action="">
-              <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Klik untuk mencari">
-                  <div class="input-group-append">
-                      <span class="input-group-text bg-transparent text-primary">
-                          <i class="fa fa-search"></i>
-                      </span>
-                  </div>
-              </div>
-          </form>
+          
       </div>
       <div class="col-lg-4 col-6 text-right">
           <p class="m-0">Customer Service</p>
@@ -80,23 +71,19 @@
                       <a href="/" class="nav-item nav-link active">Home</a>
                       <a href="/tentang" class="nav-item nav-link">Tentang</a>
                       <a href="/pesanan" class="nav-item nav-link">Cara Pemesanan</a>
-                      <div class="nav-item dropdown">
+                      {{-- <div class="nav-item dropdown">
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pembayaran <i class="fa fa-angle-down mt-1"></i></a>
                           <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
                               <a href="cart.html" class="dropdown-item">Konfirmasi</a>
                               <a href="checkout.html" class="dropdown-item">Pengiriman</a>
                           </div>
-                      </div>
+                      </div> --}}
                       <a href="/kontak" class="nav-item nav-link">Hubungi Kami</a>
                   </div>
                   <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
-                      <a href="" class="btn px-0">
-                          <i class="fas fa-heart text-primary"></i>
-                          <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
-                      </a>
-                      <a href="/cart" class="btn px-0 ml-3">
+                      <a href="/cart" class="btn px-0 ml-3" target="_blank">
                           <i class="fas fa-shopping-cart text-primary"></i>
-                          <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                          <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;"></span>
                       </a>
                       <a href="/login" class="btn px-0 ml-3" target="_blank">
                         <span class="badge text-secondary " style="padding-bottom: 2px;">Sign In</span>
